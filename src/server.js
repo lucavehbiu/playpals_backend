@@ -33,13 +33,13 @@ const resolvers = {
   },
   Mutation: {
     createMatch: (_, { title, date, location, maxPlayers }) => {
-      const match = { 
-        id: String(matches.length + 1), 
-        title, 
-        date, 
-        location, 
-        maxPlayers, 
-        currentPlayers: 0 
+      const match = {
+        id: String(matches.length + 1),
+        title,
+        date,
+        location,
+        maxPlayers,
+        currentPlayers: 0
       };
       matches.push(match);
       return match;
